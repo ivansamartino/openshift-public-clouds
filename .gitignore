@@ -1,0 +1,5 @@
+# Terraform files
+*.tfstate
+*.backup
+.terraform*
+*.tfplan

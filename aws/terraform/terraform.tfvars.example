@@ -1,0 +1,8 @@
+aws_access_key    = ""
+aws_secret_key    = ""
+key_name          = "demo-key"
+private_key_path  = "/home/user/.ssh/aws/id_rsa"
+public_key_path   = "/home/user/.ssh/aws/id_rsa.pub"
+oc_username       = "myuser"
+oc_password       = ""
+
