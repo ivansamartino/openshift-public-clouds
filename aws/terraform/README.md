@@ -39,7 +39,7 @@ aws ec2 import-key-pair --key-name mykey --publi-key-material fileb:///home/user
 
 ## Terraform
 
-Edit the file [terraform.tfvars](terraform.tfvars) to input data relevant to your environment.
+Edit the file [terraform.tfvars](terraform.tfvars.example) to input data relevant to your environment.
 
 Execute the following commands to setup the infrastructure: 
 
