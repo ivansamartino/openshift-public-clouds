@@ -4,6 +4,8 @@
 
 * AWS CLI [link](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html)
 * Terraform CLI [link](https://www.terraform.io/downloads.html)
+* A valid DNS domain. Openshift cluster and deployed applications will be available through DNS. 
+The setup has been validated using a Domain registered using Amazon Registrar
 
 Configure aws CLI. It is suggested that you create a user:
 
@@ -40,6 +42,13 @@ aws ec2 import-key-pair --key-name mykey --publi-key-material fileb:///home/user
 ## Terraform
 
 Edit the file [terraform.tfvars](terraform.tfvars.example) to input data relevant to your environment.
+
+If you already have a DNS domain handled within AWS (or an existing aws route53 zone that you want to use), 
+run the following command so that terraform imports it:
+
+```bash
+terraform import aws_route53_zone.primary <ROUTE_ID> # You can get the zone ID from AWS
+```
 
 Execute the following commands to setup the infrastructure: 
 
